@@ -15,7 +15,7 @@ body {
 }
 
 #canvas {
-	display: flex;
+	display: block;
 	margin: auto;
 	color: white;
 }
@@ -29,8 +29,8 @@ body {
 	color: #e0e0e0;
 	background-color: black;
 	/* background-image: linear-gradient(to bottom, #403e48, #35333c); */
-	border: 1px solid #45434e;
-	box-shadow: 0 0 1px 1px #2f2d35;
+	/* border: 1px solid #45434e;
+	box-shadow: 0 0 1px 1px #2f2d35; */
 }
 
 /* Status display */
@@ -122,11 +122,12 @@ header {
 		<Header>
 			<h2>This is a Header Test</h2>
 		</Header>
-
-		<canvas id="canvas">
-			HTML5 canvas appears to be unsupported in the current browser.<br >
-			Please try updating or use a different browser.
-		</canvas>
+		<div class="wrapper">
+			<canvas id="canvas">
+				HTML5 canvas appears to be unsupported in the current browser.<br >
+				Please try updating or use a different browser.
+			</canvas>
+		</div>
 		<div id="status">
 			<div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
 				<div id ="status-progress-inner"></div>
